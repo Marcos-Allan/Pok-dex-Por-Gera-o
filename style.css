@@ -1,0 +1,139 @@
+:root{
+    --cinza: #6F7275;
+    --azul: #A0C1F7;
+    --blanco:#E8EDF5;
+    --azul-escuro: #4C5C75;
+    --cinza-medio: #B8BCC2;
+                
+    /*DARK THEME*/
+    --preto: #0B3140;
+    --cinza-escuro: #164D59;
+    --verde-escuro: #458C78;
+    --verde: #88BF96;
+    --branco: #F2F2F2;
+}
+            
+body{
+    transition: .5s;
+}
+            
+#tps1, #tps2{
+    padding: 2px;
+    border-radius: 4px;
+}
+            
+#c-loader{
+    display: block;
+    position: relative;
+    animation: is-rotating 1s linear infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 70px;
+    width: 70px;
+    left: 40%;
+    top: 40%;
+    /*transform: translate(-50%, -50%);*/
+}
+            
+.df{
+    display: flex;
+}
+            
+.cl{
+    flex-direction: column;
+    text-align: center;
+}
+
+            
+a.nav-link{
+    color: black;
+}
+            
+#imgP{
+    margin: auto;
+}
+            
+div#conteudo{
+    background-color: var(--cinza-medio);
+}
+            
+.card{
+    background-color: var(--cinza) !important;
+    color: var(--blanco) !important;
+}
+            
+.navbar{
+    background-color: var(--azul-escuro);
+    color: var(--blanco);
+}
+a.nav-link{
+    color: var(--azul);
+}
+a.navbar-brand{
+    color: var(--azul);
+}
+ul.dropdown-menu{
+    background-color: var(--blanco);
+}
+ul.dropdown-menu li a{
+    color: var(--azul-escuro);
+}
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+            
+/*DARK THEME*/
+
+.dark div.modal-body,
+.dark div.modal-header{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.dark #c-loader{
+    display: block;
+    position: relative;
+    animation: is-rotating 1s linear infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--verde-escuro);
+    height: 70px;
+    width: 70px;
+    left: 40%;
+    top: 40%;
+    /*transform: translate(-50%, -50%);*/
+}
+            
+.dark a.nav-link{
+    color: var(--verde-escuro);
+            }
+             
+.dark div#conteudo{
+    background-color: var(--preto);
+            }
+            
+.dark .card{
+    background-color: var(--cinza-escuro) !important;
+    color: var(--verde) !important;
+}
+            
+.dark .navbar{
+    background-color: var(--verde-escuro);
+    color: var(--verde);
+}
+.dark a.nav-link{
+    color: var(--branco);
+}
+.dark a.navbar-brand{
+    color: var(--branco);
+}
+.dark ul.dropdown-menu{
+    background-color: var(--verde);
+}
+
+.dark ul.dropdown-menu li a{
+    color: var(--preto);
+}
